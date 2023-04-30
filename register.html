@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Registration Form</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+      }
+      form {
+        background-color: #fff;
+        width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input[type=text], input[type=email], input[type=number], select {
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 20px;
+      }
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type=submit]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><center>Registration Form</center></h1>
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="department">Department:</label>
+      <select id="department" name="department" required>
+        <option value="">Select your department</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Electrical Engineering">Electrical Engineering</option>
+        <option value="Mechanical Engineering">Mechanical Engineering</option>
+        <option value="Civil Engineering">Civil Engineering</option>
+        <option value="Business Administration">Business Administration</option>
+      </select>
+
+      <label for="semester">Semester:</label>
+      <select id="semester" name="semester" required>
+        <option value="">Select your semester</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+
+      <center><a href="success.html">SUBMIT</a></center>
+    </form>
+  </body>
+</html>
